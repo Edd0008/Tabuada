@@ -1,4 +1,4 @@
-package br.senai.jandira.tabuada;
+package br.senai.jandira.tabuada.model;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class Tabuada {
 
     }
 
-    public void calcularTabuada() {
+    public String[] calcularTabuada() {
         int apoio = 0;
         if (multiplicadorFinal < multiplicadorInicial) {
             apoio = multiplicadorFinal;
@@ -42,9 +42,10 @@ public class Tabuada {
             multiplicadorInicial = multiplicadorInicial + 1;
             i = i + 1;
         }
-        exibirTabuada();
+
+        return tabuada;
+        //exibirTabuada();
     }
-    
     public void exibirTabuada(){
         System.out.println("Resultado da sua tabuada");
 

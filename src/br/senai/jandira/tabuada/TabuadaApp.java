@@ -1,15 +1,12 @@
-package br.senai.jandira.tabuada.model;
+package br.senai.jandira.tabuada;
 
-import br.senai.jandira.tabuada.Tabuada;
+import br.senai.jandira.tabuada.ui.TelaTabuada;
+import javafx.application.Application;
 
 public class TabuadaApp {
     public static void main(String[] args) {
-        System.out.println("==================");
-        System.out.println("Tabuada");
-        System.out.println("==================");
 
-        br.senai.jandira.tabuada.Tabuada tabuada = new Tabuada();
-        tabuada.obterDados();
+        Application.launch(TelaTabuada.class, args);
 
     }
 }
