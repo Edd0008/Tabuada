@@ -44,6 +44,7 @@ public class Tabuada {
         }
         exibirTabuada();
     }
+    
     public void exibirTabuada(){
         System.out.println("Resultado da sua tabuada");
 
